@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-top: 77px;
+    padding-bottom: 65px;
+}
+
+.header__nav-list {
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+}
+
+.header__nav-item {
+    display: inline-block;
+    padding: 5px 40px;
+    font-size: 16px;
+}
+
+.header__nav-link {
+    color: #626262;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__nav-link_active,
+.header__nav-link:hover {
+    color: #03a9f4;
+}
+
+.blogposts {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+}
+
+.blogpost {
+    display: inline-block;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 74px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #626262;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+.blogpost__cover {
+    width: 100%;
+    padding-bottom: 0.904%;
+    background-image: url('..C:\Users\Elisey\Desktop\Go It\img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blogpost__label {
+    padding-top: 32px;
+    color: #b4ad9e;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.blogpost__title {
+    padding-top: 23px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.blogpost__desc {
+    padding-top: 34px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.btn-wrap {
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 22px 34px;
+    border: 1px solid black;
+    color: #626262;
+    font-size: 20px;
+    font-family: serif;
+}
