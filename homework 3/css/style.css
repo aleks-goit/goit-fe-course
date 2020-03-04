@@ -3,9 +3,14 @@
     padding: 0;
 }
 
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
 .header {
-    padding-top: 77px;
-    padding-bottom: 65px;
+    margin-top: 77px;
+    margin-bottom: 65px;
 }
 
 .header__nav-list {
@@ -16,7 +21,7 @@
 
 .header__nav-item {
     display: inline-block;
-    padding: 5px 40px;
+    margin: 5px 40px;
     font-size: 16px;
 }
 
@@ -71,13 +76,13 @@
 }
 
 .blogpost__title {
-    padding-top: 23px;
+    margin-top: 23px;
     font-size: 30px;
     line-height: 1;
 }
 
 .blogpost__desc {
-    padding-top: 34px;
+    margin-top: 34px;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -87,11 +92,14 @@
     padding: 10px 0 30px;
 }
 
-.btn {
+.btn{
     display: inline-block;
-    padding: 22px 34px;
-    border: 1px solid black;
+    padding: 22px 34px; 
     color: #626262;
     font-size: 20px;
     font-family: serif;
+}
+
+.btn:hover{
+    color: #03a9f4;
 }
