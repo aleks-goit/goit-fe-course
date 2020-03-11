@@ -9,8 +9,8 @@
 }
 
 .header {
-    margin-top: 77px;
-    margin-bottom: 65px;
+    padding-top: 77px;
+    padding-bottom: 65px;
 }
 
 .header__nav-list {
@@ -21,7 +21,7 @@
 
 .header__nav-item {
     display: inline-block;
-    margin: 5px 40px;
+    padding: 5px 40px;
     font-size: 16px;
 }
 
@@ -60,7 +60,7 @@
 
 .blogpost__cover {
     width: 100%;
-    padding-bottom: 0.904%;
+    padding-bottom: 06.904%;
     background-image: url('..C:\Users\Elisey\Desktop\Go It\img/img1.jpg');
     background-size: cover;
     background-position: center;
@@ -68,7 +68,7 @@
 }
 
 .blogpost__label {
-    padding-top: 32px;
+    margin-bottom: 32px;
     color: #b4ad9e;
     font-size: 14px;
     line-height: 1;
@@ -76,13 +76,13 @@
 }
 
 .blogpost__title {
-    margin-top: 23px;
+    margin-bottom: 23px;
     font-size: 30px;
     line-height: 1;
 }
 
 .blogpost__desc {
-    margin-top: 34px;
+    margin-bottom: 34px;
     font-size: 14px;
     line-height: 1.6;
 }
