@@ -1,3 +1,13 @@
+html {
+box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,15 +42,11 @@
     text-decoration: none;
 }
 
-.header__nav-link_active,
 .header__nav-link:hover {
     color: #03a9f4;
 }
 
 .blogposts {
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
     font-size: 0;
     text-align: center;
 }
@@ -48,13 +54,14 @@
 .blogpost {
     display: inline-block;
     width: 100%;
-    max-width: 480px;
+    max-width: 450px;
     margin-bottom: 74px;
     padding: 30px;
     box-sizing: border-box;
     color: #626262;
     font-size: 16px;
     text-align: left;
+    vertical-align: top;
 }
 
 
