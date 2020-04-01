@@ -1,0 +1,367 @@
+html {
+    box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+    }
+
+    main {
+        background-color: #e9f0fd;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    .page__header {
+        height: 92px;
+    }
+
+    .page__nav {
+        padding-top: 38px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+
+    .site__logo {
+        display: inline-block;
+    }
+    
+    .site__nav {
+        font-family: "Open Sans", "Helvetica", sans-serif;
+        width: 490px;
+        font-size: 14px;
+        float: right;
+        margin-top: 5px;
+    }
+
+
+    .site__nav li {
+        float: left;
+        margin-right: 30px;
+    }
+
+    .site__nav :last-child {
+        margin-right: 0;
+    }
+
+    .site__nav a {
+        font-weight: 700;
+        color: #0f0101;
+        line-height: 11px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+
+    .site__nav a:hover {
+        color: #1abc97;
+    }
+
+   .slider {
+        height: 600px;
+        position: relative;
+        margin-bottom: 94px;
+   }
+
+   .slider__cover {
+       display: block;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       background-image: url('../img/students.jpg');
+       background-size: cover;
+       background-position: top center;
+       top: 0;
+       left: 0;
+   }
+
+  .slider__cover__opacity {
+        background-color: rgba(0, 0, 2, 0.52);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;   
+  }
+
+  .slider__cover__container {
+      position: relative;
+      width: 1170px;
+      height: 100%;
+      margin: 0 auto;
+  }
+
+  .button__prev {
+      position: absolute;
+      background-color: #1abc9c;
+      border: none;
+      width: 105px;
+      height: 105px;
+      top: 225px;
+      left: 30px;
+  }
+
+  .fa-chevron-left{
+      position: absolute;
+      height: 40px;
+      top: 31px;
+      transform: translateX(-50%);
+  }
+
+  .button__next {
+      position: absolute;
+      background-color: #1abc9c;
+      border: none;
+      width: 105px;
+      height: 105px;
+      top: 225px;
+      right: 30px;
+  }
+
+  .fa-chevron-right {
+      position: absolute;
+      height: 40px;
+      top: 31px;
+      transform: translateX(-50%);
+  }
+
+  .slider__text {
+      font-family: "Roboto", "Helvetica", sans-serif;
+      position: absolute;
+      top: 202px;
+      left: 210px;
+      
+  }
+
+  .slider__tittle {
+      color: #ffffff;
+      font-size: 60px;
+      line-height: 82px;
+      font-weight: 900;
+      text-transform: uppercase;
+  }
+
+  .slider__desc {
+      color: #ffffff;
+      font-size: 24px;
+      line-height: 54px;
+      font-weight: 300;
+      text-transform: uppercase;
+  }
+
+    .collection {
+       font-family: "Roboto", "Helvetica", sans-serif;
+       padding-bottom: 100px;
+   }
+
+   .collection h2 {
+       color: #515151;
+       font-size: 48px;
+       line-height: 34px;
+       font-weight: 900;
+       text-transform: uppercase;
+       text-align: center;
+       margin-bottom: 110px;
+   }
+
+   .collection h2::after {
+       display: table;
+       content: "";
+       background-color: #1abc9a;
+       width: 164px;
+       height: 7px;
+       margin: 32px 503px 0;
+   }
+
+   .collection__list {
+       width: 1110px;
+       font-size: 18px;
+   }
+
+   .collection__item {
+       float: left;
+       margin-right: 30px;
+       margin-bottom: 0;  
+   }
+
+   .collection__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.collection__item:nth-last-child(- n + 4) {
+   margin-bottom: 0;  
+}
+
+   .collection__item a {
+    text-decoration: none;
+   }
+
+   .card__content {
+       position: relative;
+   }
+
+   .card__background {
+       position: absolute;
+       background-color: rgba(0, 0, 0, 0.55);
+       width: 235px;
+       height: 260px;
+       top: 10px;
+       left: 10px;
+       opacity: 0;  
+   }
+
+   .card__background:hover {
+       opacity: 1;
+   }
+
+   .icons a:hover {
+       background-color: #1abc9c;
+   }
+
+   .icons__basket a:hover {
+       background-color: #1abc9c;
+   }
+
+   
+   .collection__item:hover .collection__desc {
+        background-color: #1abc9c;
+   }
+
+   .icons {
+       position: absolute;
+       top: 80px;
+       left: 35px;
+       font-size: 0;
+   }
+
+   .icons li {
+       display: inline-block;
+       margin-right: 8px;
+   }
+
+   .icons a {
+       background-color: transparent;
+       display: block;
+       border: 2px solid #ffffff;
+       width: 50px;
+       height: 50px;
+   }
+
+   .fa-heart {
+       position: absolute;
+       height: 24px;
+       top: 14px;
+       transform: translateX(50%);
+   }
+
+   .fa-random {
+       position: absolute;
+       height: 24px;
+       top: 14px;
+       transform: translateX(50%);
+   }
+
+   .fa-clock {
+       position: absolute;
+       height: 24px;
+       top: 14px;
+       transform: translateX(50%);
+   }
+
+   .fa-shopping-cart {
+       position: absolute;
+       height: 24px;
+       top: 14px;
+       transform: translateX(60%);
+   }
+
+   .icons__basket {
+       font-family: "Open Sans", "Helvetica", sans-serif;
+       position: absolute;
+       bottom: 75px;
+       left: 35px;
+   }
+
+   .icons__basket a {
+       background-color: #323232;
+       color: #ffffff;
+       display: block;
+       border: 2px solid #ffffff;
+       width: 166px;
+       height: 50px;
+       text-decoration: none;
+   }
+
+   .icons__basket p {
+       font-size: 14px;
+       font-weight: 400;
+       padding-top: 18px;
+       padding-left: 60px;
+       text-transform: uppercase;
+   }
+
+   .collection__cover {
+       display: block;
+       width: 100%;
+   }
+
+   .collection__desc {
+    display: block;
+    background-color: #323232;
+    color: #ffffff;
+    font-weight: 900;
+    line-height: 41px;
+    text-transform: uppercase;
+   }
+
+   .collection__name {
+    float: left;
+    padding-left: 15px;
+   }
+
+   .collection__price {
+    float: right;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+   }
+
+   .page__footer {
+    font-family: "Open Sans", "Helvetica", sans-serif;
+    background-color: #323232;  
+    height: 88px;
+    text-align: center;
+    padding-top: 35px;
+   }
+
+   .white {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fefefe;
+   }
+
+   .green {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #46bfa9;
+   }
