@@ -12,11 +12,6 @@ html {
         background-color: #e9f0fd;
     }
 
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
 
     .clearfix::after {
         content: "";
@@ -25,17 +20,30 @@ html {
     }
 
     .container {
-        width: 1170px;
+        width: 1110px;
         margin: 0 auto;
     }
 
     .page__header {
-        height: 92px;
+        padding-top: 34px;
+        padding-bottom: 45px;
+    }
+
+    .header__logo {
+        float: left;
+        color: #555252;
+        font-family: 'Roboto', Helvetica, sans-serif;
+        font-size: 30px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    
+    .header__logo::first-letter {
+        color: #1abc9c;
+        font-weight: 700;
     }
 
     .page__nav {
-        padding-top: 38px;
-        padding-bottom: 30px;
         padding-left: 30px;
     }
 
@@ -45,7 +53,7 @@ html {
     
     .site__nav {
         font-family: "Open Sans", "Helvetica", sans-serif;
-        width: 490px;
+        min-width: 490px;
         font-size: 14px;
         float: right;
         margin-top: 5px;
@@ -62,6 +70,7 @@ html {
     }
 
     .site__nav a {
+        display: block;
         font-weight: 700;
         color: #0f0101;
         line-height: 11px;
@@ -77,7 +86,6 @@ html {
    .slider {
         height: 600px;
         position: relative;
-        margin-bottom: 94px;
    }
 
    .slider__cover {
@@ -168,6 +176,7 @@ html {
 
     .collection {
        font-family: "Roboto", "Helvetica", sans-serif;
+       padding-top: 94px;
        padding-bottom: 100px;
    }
 
@@ -209,7 +218,7 @@ html {
    margin-bottom: 0;  
 }
 
-   .collection__item a {
+   .collection__item button {
     text-decoration: none;
    }
 
@@ -231,11 +240,11 @@ html {
        opacity: 1;
    }
 
-   .icons a:hover {
+   .icons button:hover {
        background-color: #1abc9c;
    }
 
-   .icons__basket a:hover {
+   .icons__basket button:hover {
        background-color: #1abc9c;
    }
 
@@ -256,7 +265,7 @@ html {
        margin-right: 8px;
    }
 
-   .icons a {
+   .icons button {
        background-color: transparent;
        display: block;
        border: 2px solid #ffffff;
@@ -268,28 +277,28 @@ html {
        position: absolute;
        height: 24px;
        top: 14px;
-       transform: translateX(50%);
+       transform: translateX(-50%);
    }
 
    .fa-random {
        position: absolute;
        height: 24px;
        top: 14px;
-       transform: translateX(50%);
+       transform: translateX(-50%);
    }
 
    .fa-clock {
        position: absolute;
        height: 24px;
        top: 14px;
-       transform: translateX(50%);
+       transform: translateX(-50%);
    }
 
    .fa-shopping-cart {
        position: absolute;
        height: 24px;
        top: 14px;
-       transform: translateX(60%);
+       transform: translateX(-260%);
    }
 
    .icons__basket {
@@ -299,7 +308,7 @@ html {
        left: 35px;
    }
 
-   .icons__basket a {
+   .icons__basket button {
        background-color: #323232;
        color: #ffffff;
        display: block;
@@ -312,8 +321,8 @@ html {
    .icons__basket p {
        font-size: 14px;
        font-weight: 400;
-       padding-top: 18px;
-       padding-left: 60px;
+       padding-top: 5px;
+       padding-left: 40px;
        text-transform: uppercase;
    }
 
