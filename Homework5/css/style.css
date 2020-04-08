@@ -45,6 +45,7 @@ html {
 
     .page__nav {
         padding-left: 30px;
+        float: right;
     }
 
     .site__logo {
@@ -55,7 +56,6 @@ html {
         font-family: "Open Sans", "Helvetica", sans-serif;
         min-width: 490px;
         font-size: 14px;
-        float: right;
         margin-top: 5px;
     }
 
@@ -356,9 +356,9 @@ html {
    .page__footer {
     font-family: "Open Sans", "Helvetica", sans-serif;
     background-color: #323232;  
-    height: 88px;
     text-align: center;
     padding-top: 35px;
+    padding-bottom: 30px;
    }
 
    .white {
