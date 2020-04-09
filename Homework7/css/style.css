@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Montserrat__Bold";
+    src: url("../fonts/montserrat/Montserrat-Bold.woff"),
+         url("../fonts/montserrat/Montserrat-Bold.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat__Semi-Bold";
+    src: url("../fonts/montserrat/Montserrat-SemiBold.woff"),
+         url("../fonts/montserrat/Montserrat-SemiBold.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoSlab__Regular";
+    src: url("../fonts/robotos/RobotoSlab-Regular.woff"),
+         url("../fonts/robotos/RobotoSlab-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto__Italic";
+    src: url("../fonts/roboto/Roboto-Italic.woff"),
+         url("../fonts/roboto/Roboto-Italic.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "KaushanScript";
+    src: url("../fonts/kaushan/KaushanScript-Regular.woff"),
+         url("../fonts/kaushan/KaushanScript-Regular.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+:root {
+    --color__yellow: #fed136;
+    --color__black: #222222;
+    --color__white: #ffffff;
+    --color__grey: #777777;
+    --color__white-grey: #bbbbbb;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.page__header {
+    padding-top: 25px;
+    padding-bottom: 110px;
+}
+
+.page__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 485px;
+}
+
+.site__logo {
+    font-family: "KaushanScript", "Helvetica", sans-serif;
+    color: var(--color__yellow);
+    font-size: 26px;
+    line-height: 41px;
+    text-decoration: none;
+}
+
+.site__nav a {
+    font-family: "Montserrat__Semi-Bold", "Arial", sans-serif;
+    color: var(--color__black);
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.site__nav-item a:hover {
+    color: var(--color__yellow);
+}
+
+.service {
+    padding-bottom: 102px;
+}
+
+.service__tittle {
+    font-family: "Montserrat__Bold", "Arial", sans-serif;
+    color: var(--color__black);
+    font-size: 40px;
+    line-height: 75px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.service__about {
+    font-family: "Roboto__Italic", "Arial", sans-serif;
+    color: var(--color__grey);
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.service__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__item {
+    width: 290px;
+    text-align: center;
+}
+
+.service__item-tittle {
+    font-family: "Montserrat__Bold", "Arial", sans-serif;
+    color: var(--color__black);
+    font-size: 18px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.service__item-about {
+    font-family: "RobotoSlab__Regular", "Arial", sans-serif;
+    color: var(--color__grey);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact {
+    padding-top: 102px;
+    background-color: var(--color__black);
+    background-image: url("../img/Map\ Image.png");
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+}
+
+.contact__tittle {
+    font-family: "Montserrat__Bold", "Arial", sans-serif;
+    color: var(--color__white);
+    font-size: 40px;
+    line-height: 75px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact__about {
+    font-family: "RobotoSlab__Regular", "Arial", sans-serif;
+    color: var(--color__grey);
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+.form {
+    position: relative;
+}
+
+.send__message {
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    padding-bottom: 210px;
+}
+
+.send__message input {
+    width: 455px;
+    height: 52px;
+    margin-bottom: 28px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+.send__message input::placeholder {
+    font-family: "Montserrat__Bold", "Arial", sans-serif;
+    color: var(--color__white-grey);
+    font-size: 14px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.send__message input:valid {
+    outline: 3px solid green;
+}
+
+.send__message input:invalid {
+    outline: 3px solid red;
+}
+
+.send__message input[type="message"] {
+    position: absolute;
+    right: 0;
+    padding-bottom: 170px;
+}
+
+.send__message button {
+    font-family: "Montserrat__Bold", "Arial", sans-serif;
+    background-color: var(--color__yellow);
+    color: var(--color__white);
+    width: 240px;
+    height: 66px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    left: 350px;
+    top: 260px;
+}
