@@ -15,21 +15,21 @@ html {
 }
 
 .container {
-    display: block;
     width: 1200px;
     margin: 0 auto;
 }
 
 .page__header {
     font-family: var(--font_montserrat);
-    min-height: 180px;
+    padding-top: 26px;
+    padding-bottom: 112px;
 }
 
 .page__nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 90px;
+    align-items: center;
 }
 
 .site__logo {
@@ -38,7 +38,6 @@ html {
     line-height: 1.2;
     font-weight: 700;
     text-decoration: none;
-    padding-top: 26px;
 }
 
 
@@ -46,13 +45,12 @@ html {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    width: 490px;
+    min-width: 490px;
+    height: 15px;
 }
 
 .site__nav-item {
-    line-height: 1.2;
-    font-weight: 400;
-    padding-top: 41px;
+    font-weight: 700;
 }
 
 .site__nav-item a {
@@ -77,17 +75,7 @@ html {
 }
 
 .service {
-    margin-bottom: 92px;
-}
-
-
-.service__sub-tittle {
-    color: #333333;
-    font-family: var(--font_kaushan);
-    font-size: 24px;
-    line-height: 1.2;
-    padding-bottom: 18px; 
-    text-align: center;
+    padding-bottom: 92px;
 }
 
 .service__tittle {
@@ -98,7 +86,19 @@ html {
     line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 46px;
+    margin-bottom: 46px;
+}
+
+.service span {
+    display: block;
+    color: #333333;
+    font-family: var(--font_kaushan);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: 18px; 
+    text-align: center;
+    text-transform: none;
 }
 
 .service__tittle::after{
@@ -118,9 +118,10 @@ html {
 }
 
 .service__item {
-    display: flex;
+    position: relative;
     width: 382px;
     min-height: 75px;
+    padding-left: 82px;
     margin-bottom: 100px;
 }
 
@@ -129,13 +130,9 @@ html {
 }
 
 .icon {
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.name__about {
-    position: relative;
-    display: flex;
+    position: absolute;
+    left: 30px;
+    top: 0;
 }
 
 .service__name {
@@ -160,13 +157,8 @@ html {
     width: 300px;
 }
 
-.team__sub-tittle {
-    color: #333333;
-    font-family: var(--font_kaushan);
-    font-size: 24px;
-    line-height: 1.2;
-    text-align: center;
-    padding-bottom: 18px;
+.team {
+    padding-bottom: 80px;
 }
 
 .team__tittle {
@@ -177,7 +169,19 @@ html {
     line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 46px;
+    margin-bottom: 46px;
+}
+
+.team span {
+    display: block;
+    color: #333333;
+    font-family: var(--font_kaushan);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: 18px; 
+    text-align: center;
+    text-transform: none;
 }
 
 .team__tittle::after {
@@ -199,7 +203,7 @@ html {
     width: 980px;
     margin-left: 112px;
     text-align: center;
-    padding-bottom: 92px;
+    margin-bottom: 92px;
 }
 
 .team__list {
@@ -209,7 +213,6 @@ html {
 
 .team__item {
     width: 380px;
-    margin-bottom: 80px;
 }
 
 .team__avatar-wrap {
@@ -252,24 +255,41 @@ html {
 }
 
 .team__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../icons/facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fce38a;
+    width: 55px;
+    height: 56px;
     margin-right: 1px;
+}
+
+.team__social-item:nth-child(2n) {
+    background-image: url("../icons/twitter.png");
+}
+
+.team__social-item:nth-child(3n) {
+    background-image: url("../icons/pinterest.png");
+}
+
+.team__social-item:nth-child(4n) {
+    background-image: url("../icons/instagram.png");
 }
 
 .team__social-item:last-child {
     margin-right: 0;
 }
 
-.team__social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fce38a;
-    width: 55px;
-    height: 56px;
+.team__social-item:hover {
+    background-color: #95e1d3;
 }
 
-.team__social-link:hover {
-    background-color: #95e1d3;
+.team__social-link {
+    width: 55px;
+    height: 56px;
 }
 
 .team__item-name {
@@ -277,10 +297,9 @@ html {
     font-family: var(--font_montserrat);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 5;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 30px;
 }
 
 .team__item-position {
@@ -289,7 +308,7 @@ html {
     font-weight: 300;
     font-style: italic;
     text-align: center;
-    padding-top: 16px;
+    
 }
 
 .footer__content {
