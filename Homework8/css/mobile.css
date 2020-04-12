@@ -1,0 +1,233 @@
+body {
+    background-image: url("../img/Vector\ Smart\ Object2.png");
+    background-position: 51.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+:root {
+    --color_white: #ffffff;
+    --color-red: #FF4E50;
+    --color-black: #333333;
+    --color-grey: #666666;
+    --color-yellow: #FFA507;
+    --color-green: #1CD7AD;
+    --color-blue: #4E73DB;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family: "Montserrat__Bold";
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    color: var(--color_white);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__inner-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header__inner-item{
+    margin-bottom: 133px;
+    
+}
+
+.item-link {
+    color: var(--color_white);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 5px 10px;
+}
+
+.item-link:hover {
+    border: 2px solid var(--color_white);
+}
+
+.after__header {
+    padding-bottom: 206px;
+}
+
+.after__header-tittle {
+    font-family: "Montserrat__Bold";
+    color: var(--color_white);
+    width: 280px;
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 14px;
+    margin: 0 auto;
+}
+
+.after__header-sub-tittle {
+    font-family: "Roboto__Light";
+    color: var(--color_white);
+    width: 222px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+
+.after__header-button {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat__Bold";
+    background-color: var(--color-red);
+    color: var(--color_white);
+    margin:0 auto;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 15px 50px;
+    cursor: pointer;
+}
+
+.partner {
+    background-color: #ffffff;
+    padding-bottom: 58px;
+}
+
+.partner__tittle {
+    font-family: "Montserrat__Bold";
+    color: var(--color-black);
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.partner__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partner__item {
+    width: 210px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.avatar__tv::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: var(--color-red);
+    width: 32px;
+    height: 32px;
+    border: 4px solid var(--color_white);
+    border-radius: 100%;
+    top: 85px;
+    right: 40px;
+    background-image: url("../icons/tv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar__colba::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: var(--color-yellow);
+    width: 32px;
+    height: 32px;
+    border: 4px solid var(--color_white);
+    border-radius: 100%;
+    top: 85px;
+    right: 40px;
+    background-image: url("../icons/colba.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar__cup::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: var(--color-green);
+    width: 32px;
+    height: 32px;
+    border: 4px solid var(--color_white);
+    border-radius: 100%;
+    top: 85px;
+    right: 40px;
+    background-image: url("../icons/cup.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.avatar__telega::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: var(--color-blue);
+    width: 32px;
+    height: 32px;
+    border: 4px solid var(--color_white);
+    border-radius: 100%;
+    top: 85px;
+    right: 40px;
+    background-image: url("../icons/telega.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.partner__item-name{ 
+    font-family: "Montserrat__Bold";
+    color: var(--color-black);
+    font-size: 14px;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 18px;
+}
+
+.partner__about {
+    font-family: "Roboto__Light";
+    color: var(--color-grey);
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.partner button {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat__Bold";
+    color: var(--color-red);
+    width: 280px;
+    background-color: transparent;
+    font-size: 14px;
+    border: 2px solid var(--color-red);
+    border-radius: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+}
