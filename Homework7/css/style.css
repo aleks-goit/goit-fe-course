@@ -121,6 +121,45 @@
     text-align: center;
 }
 
+.icon__basket {
+    display: flex;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 66px;
+    height: 66px;
+    border: 3px solid var(--color__yellow);
+    border-radius: 100%;
+    background-image: url("../icons/Icon-Basket.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon__laptop {
+    display: flex;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 66px;
+    height: 66px;
+    border: 3px solid var(--color__yellow);
+    border-radius: 100%;
+    background-image: url("../icons/Icon-Laptop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon__locked {
+    display: flex;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 66px;
+    height: 66px;
+    border: 3px solid var(--color__yellow);
+    border-radius: 100%;
+    background-image: url("../icons/Icon-Locked.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .service__item-tittle {
     font-family: "Montserrat__Bold", "Arial", sans-serif;
     color: var(--color__black);
@@ -197,13 +236,34 @@
     outline: 3px solid red;
 }
 
-.send__message input[type="message"] {
+textarea {
     position: absolute;
+    width: 455px;
+    height: 220px;
     right: 0;
-    padding-bottom: 170px;
+}
+
+textarea::placeholder {
+    font-family: "Montserrat__Bold", "Arial", sans-serif;
+    color: var(--color__white-grey);
+    font-size: 14px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+textarea:valid {
+    outline: 3px solid green;
+}
+
+textarea:invalid {
+    outline: 3px solid red;
 }
 
 .send__message button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     font-family: "Montserrat__Bold", "Arial", sans-serif;
     background-color: var(--color__yellow);
     color: var(--color__white);
@@ -213,7 +273,7 @@
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
-    position: absolute;
     left: 350px;
     top: 260px;
+    cursor: pointer;
 }
