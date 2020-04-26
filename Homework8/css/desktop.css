@@ -1,16 +1,15 @@
 @media (min-width: 942px) {
-    body{
-        background-position: 50%;
-        height: 700px;
-    }
     .container {
-        max-width: 942px;
         margin: 0 auto;
+    }
+    
+    .header {
+        background-position: 50%;
     }
 
     .header__inner {
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 40px;
+        padding-right: 60px;
         padding-top: 35px;
         padding-bottom: 25px;
         display: flex;
@@ -46,7 +45,7 @@
     }
 
     .partner__list {
-        width: 942px;
+        max-width: 942px;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;

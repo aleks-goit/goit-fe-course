@@ -1,10 +1,3 @@
-body {
-    background-image: url("../img/Vector\ Smart\ Object2.png");
-    background-position: 51.5%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 540px;
-}
 
 img {
     display: block;
@@ -23,8 +16,14 @@ img {
 }
 
 .container {
-    max-width: 320px;
     margin: 0 auto;
+}
+
+.header {
+    background-image: url("../img/Vector\ Smart\ Object2.png");
+    background-position: 51.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header__inner {
@@ -52,7 +51,6 @@ img {
 
 .header__inner-item{
     margin-bottom: 133px;
-    
 }
 
 .item-link {
@@ -81,7 +79,7 @@ img {
     line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 14px;
+    padding-bottom: 14px;
     margin: 0 auto;
 }
 
@@ -127,6 +125,7 @@ img {
     text-align: center;
     line-height: 1.2;
     margin-bottom: 20px;
+    padding-top: 45px;
 }
 
 .partner__list {
@@ -216,7 +215,7 @@ img {
     font-size: 14px;
     text-align: center;
     padding-top: 22px;
-    padding-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 .partner__about {

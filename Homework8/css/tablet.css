@@ -1,10 +1,11 @@
 @media (min-width: 748px) and (max-width: 941px) {
-    body{
-        height: 702px;
-    }
+    
     .container {
-        max-width: 728px;
         margin: 0 auto;
+    }
+
+    .header {
+        background-position: 50%;
     }
 
     .header__inner {
