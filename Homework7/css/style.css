@@ -121,8 +121,9 @@
     text-align: center;
 }
 
-.icon__basket {
+.service__item::before {
     display: flex;
+    content: "";
     margin: 0 auto;
     background-color: transparent;
     width: 66px;
@@ -134,30 +135,12 @@
     background-position: center;
 }
 
-.icon__laptop {
-    display: flex;
-    margin: 0 auto;
-    background-color: transparent;
-    width: 66px;
-    height: 66px;
-    border: 3px solid var(--color__yellow);
-    border-radius: 100%;
+.service__item:nth-child(2n)::before {
     background-image: url("../icons/Icon-Laptop.png");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon__locked {
-    display: flex;
-    margin: 0 auto;
-    background-color: transparent;
-    width: 66px;
-    height: 66px;
-    border: 3px solid var(--color__yellow);
-    border-radius: 100%;
+.service__item:nth-child(3n)::before {
     background-image: url("../icons/Icon-Locked.png");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .service__item-tittle {
@@ -201,18 +184,16 @@
     margin-bottom: 76px;
 }
 
-.form {
-    position: relative;
-}
-
 .send__message {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 940px;
     padding-bottom: 210px;
 }
 
-.send__message input {
+.div input {
+    display: flex;
     width: 455px;
     height: 52px;
     margin-bottom: 28px;
@@ -237,10 +218,8 @@
 }
 
 textarea {
-    position: absolute;
     width: 455px;
     height: 220px;
-    right: 0;
 }
 
 textarea::placeholder {
@@ -261,8 +240,6 @@ textarea:invalid {
 }
 
 .send__message button {
-    display: flex;
-    justify-content: center;
     margin: 0 auto;
     font-family: "Montserrat__Bold", "Arial", sans-serif;
     background-color: var(--color__yellow);
@@ -273,7 +250,5 @@ textarea:invalid {
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
-    left: 350px;
-    top: 260px;
     cursor: pointer;
 }
